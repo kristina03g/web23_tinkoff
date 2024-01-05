@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+:root {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  
+    --main-font-color: #000221;
+    --main-shadow-color: rgba(0, 0, 0, 0.12);
+    --main-background-color: #d3c5f1;
+    --main-text-color: rgba(0, 0, 0, 0.80);
+    --another-purple-color: #c3a7ff;
+    --dark-purple-color: #9286b1;
+}
+
+html, body {
+    color: var(--main-font-color);
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-background-color);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--another-purple-color);
+}
+
+main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-group {
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0px 20px;
+}
+
+.start-values-button {
+    display: inline-flex;
+    align-items: flex-start;
+    border-radius: 6px;
+    border-width: 0px;
+    background: var(--main-background-color);
+    color: var(--main-text-color);
+    font-size: 12px;
+    padding: 10px 16px;
+    margin: 10px 20px;
+    transition: all 0.5s ease-out;
+}
+
+.start-values-button:hover {
+    background: #a28ad2;
+}
+
+.start-values-button:active {
+    background: #9a78de;
+}
+
+.start-values-button:focus {
+    border: 2px solid rgba(51, 51, 51, 0.48);
+}
+
+.new-card {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-self: flex-start;
+    margin: 20px 50px;
+}
+
+.title {
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.new-card-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-card-form-input {
+    font-size: 14px;
+    border-radius: 4px;
+    border-width: 0px;
+    margin: 7px 0px;
+    padding: 10px 7px;
+    background-color: var(--dark-purple-color);
+    color: white;
+}
+
+.new-card-form-input::placeholder {
+    color: white;
+}
+
+.new-card-form-button {
+    width: fit-content;
+    align-self: flex-end;
+    margin-top: 10px;
+    border-radius: 6px;
+    border-width: 0px;
+    background: var(--another-purple-color);
+    color: var(--main-text-color);
+    font-size: 15px;
+    padding: 10px 16px;
+    transition: all 0.5s ease-out;
+}
+
+.new-card-form-button:hover {
+    background: #a28ad2;
+}
+
+.new-card-form-button:active {
+    background: #9a78de;
+}
+
+.new-card-form-button:focus {
+    border: 2px solid rgba(51, 51, 51, 0.48);
+}
+
+.main-sep-line {
+    height: 100%;
+    width: 20px;
+    border-left: 5px dotted var(--another-purple-color);
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 20px 30px;
+    align-self: flex-start;
+}
+
+.card-list-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.one-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 175px;
+    border-radius: 10px;
+    border: 0.5px solid white;
+    background-color: var(--dark-purple-color);
+    color: white;
+    padding: 10px 15px;
+}
+
+.one-card-buttons {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+.change-card-button {
+    color: var(--another-purple-color);
+    background-color: var(--dark-purple-color);
+    border-radius: 5px;
+    border-width: 0px;
+    margin: 0px 2px;
+    transition: all 0.5s ease-out;
+}
+
+.change-card-button:hover {
+    background: #a28ad2;
+}
+
+.change-card-button:active {
+    background: #9a78de;
+}
+
+.change-card-button:focus {
+    border: 2px solid rgba(51, 51, 51, 0.48);
+}
+
+.one-card-info {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0px;
+}
+
+.card-image {
+    height: 80px;
+    width: 80px;
+}
+
+.gray-img {
+    background-color: rgb(169, 169, 169);
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+    justify-content: space-between;
+}
+
+.card-name {
+    margin: 0px 0px;
+    font-size: 16px;
+}
+
+.gray-t {
+    color: rgb(169, 169, 169);
+}
+
+.card-more-info {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+
+.card-id {
+    margin: 2px 0px;
+    font-size: 13px;
+}
+
+.card-provider {
+    margin: 2px 0px;
+    font-size: 13px;
+}
+
+.one-card-description {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+}
+
+.card-description {
+    margin: 0px 0px;
+    font-size: 15px;
+}
+
+.loader {
+    color: var(--dark-purple-color);
+    font-size: 13px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    text-indent: -9999em;
+    position: absolute;
+    animation: mulShdSpin 1.3s infinite linear;
+    transform: translateZ(0);
+  }
+  
+  @keyframes mulShdSpin {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 
+      2em -2em 0 0em, 3em 0 0 -1em, 
+      2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 
+      3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 
+      2em -2em 0 0, 3em 0 0 0.2em, 
+      2em 2em 0 0, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, 
+       -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, 
+       -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, 
+       -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 
+      3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 
+      3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+  
+  .blur {
+    filter: blur(2px);
+  }
+
+  .invisible {
+    display: none;
+}

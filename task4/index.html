@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js" defer></script>
+    <title>Карточки</title>
+</head>
+<body>
+<header>
+    <p class="name-group"></p>
+    <button class="start-values-button">Исходные карточки</button>
+</header>
+<main>
+    <section class="new-card">
+        <p id="add_title" class="title">Добавление карточки товара</p>
+        <p id="edit_title" class="title invisible">Изменение карточки товара</p>
+        <form class="new-card-form">
+            <input class="new-card-form-input" name="name" type="text" placeholder="Название"></input>
+            <input class="new-card-form-input" name="url" type="url" placeholder="Ссылка на изображение"></input>
+            <textarea class="new-card-form-input" name="description" cols="40" rows="7" placeholder="Описание"></textarea>
+            <input class="new-card-form-input" name="id" type="number" min="1" placeholder="Код товара"></input>
+            <input class="new-card-form-input" name="provider" type="text" placeholder="Поставщик"></input>
+            <button id="add_card" class="new-card-form-button">Добавить</button>
+            <button id="edit_card" class="new-card-form-button invisible">Изменить</button>
+        </form>
+    </section>
+    <div class="main-sep-line"></div>
+    <section class="card-list">
+        <p class="title">Витрина карточек</p>
+        <div class="card-list-list">
+            <!--<div class="one-card">
+                <div class="one-card-buttons">
+                    <button id="edit" class="change-card-button">
+                        <i class="fa fa-pencil change-card-button"></i>
+                    </button>
+                    <button id="delete" class="change-card-button">
+                        <i class="fa fa-trash change-card-button"></i>
+                    </button>
+                </div>
+                <div class="one-card-info">
+                    <img class="card-image" src="https://gas-kvas.com/uploads/posts/2023-03/1678350483_gas-kvas-com-p-milie-risunki-lyagushek-dlya-nachinayushch-31.jpg">
+                    <div class="card-info">
+                        <p class="card-name">Пупупу</p>
+                        <div class="card-more-info">
+                            <p class="card-id">ID: 111</p>
+                            <p class="card-provider">Поставщик: опционален</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-card-description">
+                    <p class="card-description">бла бла бла описание</p>
+                </div>
+            </div> -->
+            <div class="one-card skeleton">
+                <div class="one-card-buttons">
+                    <button id="edit" class="change-card-button">
+                        <i class="fa fa-pencil change-card-button"></i>
+                    </button>
+                    <button id="delete" class="change-card-button">
+                        <i class="fa fa-trash change-card-button"></i>
+                    </button>
+                </div>
+                <div class="one-card-info">
+                    <img class="card-image gray-img">
+                    <div class="card-info">
+                        <p class="card-name gray-t">Название</p>
+                        <div class="card-more-info">
+                            <p class="card-id gray-t">ID:</p>
+                            <p class="card-provider gray-t">Поставщик:</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-card-description">
+                    <p class="card-description gray-t">Описание</p>
+                </div>
+            </div>
+            <div class="one-card skeleton">
+                <div class="one-card-buttons">
+                    <button id="edit" class="change-card-button">
+                        <i class="fa fa-pencil change-card-button"></i>
+                    </button>
+                    <button id="delete" class="change-card-button">
+                        <i class="fa fa-trash change-card-button"></i>
+                    </button>
+                </div>
+                <div class="one-card-info">
+                    <img class="card-image gray-img">
+                    <div class="card-info">
+                        <p class="card-name gray-t">Название</p>
+                        <div class="card-more-info">
+                            <p class="card-id gray-t">ID:</p>
+                            <p class="card-provider gray-t">Поставщик:</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-card-description">
+                    <p class="card-description gray-t">Описание</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <span class="loader invisible"></span>   
+</main>
+<footer>  
+</footer>
+</body>
+</html>
