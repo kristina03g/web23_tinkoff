@@ -21,3 +21,11 @@
 Предварительно должны быть установлены git и nodejs(версия lts 16 и выше)
 - install node.js v16>(npm v7.x>) (https://nodejs.org/en/download/)
 - install git(https://git-scm.com/downloads)
+
+Далее:
+- Скачиваем проект к себе
+- Заходим в папку с проектом и открываем там терминал
+- `npm i` - установка зависимостей(появляется папка node-modules и файл package-lock.json)
+- Для установки сервера прописываем `npm install --save-dev json-server`
+- Для запуска сервера - `npx json-server --watch db.json`, где `db.json` - файл с базой данных
+- Наводим на файл `index.html` и через правую кнопку мыши нажимаем `Open with Live Server`, после этого видим, как наш проект(сайт) отображается в браузере по адресу `http://127.0.0.1:5500`
