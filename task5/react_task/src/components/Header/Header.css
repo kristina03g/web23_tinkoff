@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--another-purple-color);
+}
+
+.header-text {
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    background: var(--main-background-color);
+    border-radius: 5px;
+    padding: 7px;
+    margin-right: 20px;
+}
+
+.header-text-title {
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px 50px;
+    text-shadow: 0px 4px 4px var(--main-shadow-color);
+}
