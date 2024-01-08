@@ -1,0 +1,83 @@
+.movie-form {
+    width: 57vw;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    margin: 15px 10px 5px 5px;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 15px 0px 0px;
+    max-height: 525px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: 12px;
+    scrollbar-color: rgba(255, 255, 255, 0.8) var(--dark-purple-color);
+}
+
+.form::-webkit-scrollbar {
+    width: 12px;
+}
+.form::-webkit-scrollbar-track {
+    background: var(--dark-purple-color);
+    border-radius: calc(12px/2);
+}
+.form::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: calc(12px/2);
+    border: 3px solid var(--dark-purple-color);
+}
+
+.form-title {
+    font-size: 25px;
+    margin: 10px 0px 0px 0px;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 25px 0px 0px;
+    align-self: flex-end;
+}
+
+.form-button {
+    width: fit-content;
+    border-radius: 6px;
+    border-width: 0px;
+    background: var(--another-purple-color);
+    font-family: Montserrat;
+    color: var(--main-text-color);
+    font-size: 15px;
+    padding: 10px 12px;
+    box-shadow: 0px 5px 7px 0px var(--dark-purple-color); 
+    transition: all 0.5s ease-out;
+    margin-left: 20px;
+}
+
+#cancel {
+    background: var(--main-background-color);
+}
+
+.form-button:hover {
+    background: #a28ad2;
+}
+
+.form-button:active {
+    background: #9a78de;
+}
+
+#cancel:hover {
+    background: #a28ad2;
+}
+
+#cancel:active {
+    background: #9a78de;
+}
